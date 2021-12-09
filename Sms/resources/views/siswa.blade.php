@@ -24,7 +24,7 @@
     </div>
 
     <!--operasi yang mengatur alur web dan mengatur -->
-    @if($layout == 'index'){
+    @if($layout == 'index')
     <div class="container-fluid ">
         <div class="container-fluid ">
             <div class="row justify-content-center">
@@ -33,18 +33,16 @@
                 </section>
             </div>
         </div>
-    </div>}
-
-    @elseif($layout == 'create'){
+    </div>
+    @elseif($layout == 'create')
     <div class="container-fluid" id="create-form">
         <div class="row justify-content-center">
             <section class="col-md-7">
                 @include("inputsiswa")
             </section>
         </div>
-    </div>}
-
-    @elseif($layout == 'show'){
+    </div>
+    @elseif($layout == 'show')
     <div class="container">
         <div class="row justify-content-center">
             <section class="col">
@@ -52,16 +50,15 @@
             </section>
             <section class="col"></section>
         </div>
-    </div>}
-
-    @elseif($layout == 'edit'){
+    </div>
+    @elseif($layout == 'edit')
     <div class="container">
         <div class="row justify-content-center">
             <section class="col-md-7">
                 @include("editsiswa")
             </section>
         </div>
-    </div>}
+    </div>
     @endif
 
     <!-- Optional JavaScript -->
