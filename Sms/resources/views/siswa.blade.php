@@ -24,7 +24,7 @@
     </div>
 
     <!--operasi yang mengatur alur web dan mengatur -->
-    @if($layout == 'index')
+    @if($layout == 'index'){
     <div class="container-fluid ">
         <div class="container-fluid ">
             <div class="row justify-content-center">
@@ -33,16 +33,18 @@
                 </section>
             </div>
         </div>
-    </div>
-    @elseif($layout == 'create')
+    </div>}
+
+    @elseif($layout == 'create'){
     <div class="container-fluid" id="create-form">
         <div class="row justify-content-center">
             <section class="col-md-7">
                 @include("inputsiswa")
             </section>
         </div>
-    </div>
-    @elseif($layout == 'show')
+    </div>}
+
+    @elseif($layout == 'show'){
     <div class="container">
         <div class="row justify-content-center">
             <section class="col">
@@ -50,16 +52,23 @@
             </section>
             <section class="col"></section>
         </div>
-    </div>
-    @elseif($layout == 'edit')
+    </div>}
+
+    @elseif($layout == 'edit'){
     <div class="container">
         <div class="row justify-content-center">
             <section class="col-md-7">
                 @include("editsiswa")
             </section>
         </div>
-    </div>
+    </div>}
     @endif
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>
 
